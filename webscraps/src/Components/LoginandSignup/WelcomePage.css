@@ -1,0 +1,82 @@
+.welcome-container {
+  background-image: url('../Assets/WelcomeBg.png'); /* Ensure the file path is correct */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: #fff;
+}
+
+/* Class specifically for the list items */
+.navbar-list {
+  position: absolute; /* Position the list absolutely */
+  top: 20px; /* Position it 20px from the top */
+  right: 120px; /* Position it 20px from the right */
+  list-style: none; /* Remove default list styling */
+  display: flex;
+  gap: 50px; /* Add spacing between list items */
+}
+
+.navbar-list li {
+  color: #fff; /* Black text color */
+  font-weight: bold; /* Bold text */
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.navbar-list li:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.go-back-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4c00b4;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+img {
+  width: 30%;
+  margin-left: 60%;
+  margin-top: 0%;    
+}
+
+/* Class for the paragraph on the left */
+.text-container {
+  position: absolute;
+  top: 45%; /* Vertically center the paragraph */
+  left: 10%; /* Position it 10% from the left */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+  width: 30%; /* Set the width of the paragraph */
+  color: black; /* Black text color */
+  font-size: 18px; /* Font size for readability */
+  line-height: 1.6; /* Line height for better spacing */
+}
+.Welcomelogo{
+    width: 70%;
+    margin-left: 0%;
+}
+
+/* Button Styling */
+.continue-button {
+  padding: 10px 20px; /* Add padding for the button */
+  font-size: 16px; /* Set font size */
+  background-color: #3276d7     ; /* Blue background color */
+  color: white; /* White text color */
+  border: none; /* Remove default border */
+  border-radius: 25px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.continue-button:hover {
+  background-color: #2966bb; /* Darker blue on hover */
+}

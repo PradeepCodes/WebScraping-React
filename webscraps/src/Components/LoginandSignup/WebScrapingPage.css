@@ -1,0 +1,83 @@
+.webscraping-container {
+    background: url('../Assets/WebscrapBg.png') no-repeat center center; /* Ensure the file path is correct */
+    background-size: cover; /* Make the background image cover the entire container */
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full viewport width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black; /* Text color */
+    background-color: #fff; /* Fallback background color */
+}
+
+.webscraping-container p {
+  margin-top: 10px; /* Add minimal spacing above the <p> tag */
+  margin-bottom: 0; /* Remove any margin below the <p> tag */
+  font-size: 16px; /* Optional: Adjust font size for better readability */
+}
+
+/* Navbar Background */
+.navbar-background {
+  background-color: #3276d7; /* Blue background */
+  padding: 10px 20px; /* Add padding around the navbar */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  margin-bottom: 20px; /* Add spacing below the navbar */
+  display: flex;
+  align-items: center;
+}
+
+/* Row and Column Layout */
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.col-12 {
+  flex: 1; /* Ensure the content spans the full width */
+}
+
+/* Navbar Logo */
+.navbar-logo {
+  width: 50px; /* Adjust the size of the logo */
+  height: auto;
+  margin-right: 20px; /* Add spacing between the logo and the navbar */
+}
+
+/* Search Box Container */
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px; /* Add spacing below the <h1> */
+  width: 70%; /* Full width */
+  margin-bottom: 0; /* Ensure no margin below the search box */
+}
+
+/* Search Input Field */
+.search-input {
+  width: 60%; /* Large input field */
+  padding: 15px; /* Add padding for better appearance */
+  font-size: 16px; /* Font size for readability */
+  border: 2px solid #ccc; /* Light gray border */
+  border-radius: 25px 0 0 25px; /* Rounded corners on the left */
+  outline: none; /* Remove default outline */
+}
+
+/* Search Button */
+.search-button {
+  padding: 15px 30px; /* Add padding for the button */
+  font-size: 16px; /* Font size for readability */
+  background-color: #3e8dff; /* Blue background color */
+  color: white; /* White text color */
+  border: none; /* Remove default border */
+  border-radius: 0 25px 25px 0; /* Rounded corners on the right */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.search-button:hover {
+  background-color: darkblue; /* Darker blue on hover */
+}

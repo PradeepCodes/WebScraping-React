@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './LoginandSignup.css';
 
 import user_icon from '../Assets/user.png';
@@ -9,10 +10,11 @@ import spiderlogo from '../Assets/Scraplogo.png';
 const LoginandSignup = () => {
   const [action, setAction] = useState("Signup");
   const [isLostPasswordChecked, setIsLostPasswordChecked] = useState(false);
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const handleSignupClick = () => {
-    setAction("Signup");
     console.log("Signup button clicked");
+    navigate('/welcome'); // Navigate to the Welcome page
   };
 
   const handleLoginClick = () => {
@@ -65,7 +67,7 @@ const LoginandSignup = () => {
       <div className="submit-container">
         <div
           className={action === "Login" ? "submit gray" : "submit"}
-          onClick={handleSignupClick}
+          onClick={handleSignupClick} // Navigate to Welcome page
         >
           Signup
         </div>
