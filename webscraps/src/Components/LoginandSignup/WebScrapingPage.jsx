@@ -1,9 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Navbar from '../Common/Navbar'; // Import the Navbar component
 import './WebScrapingPage.css'; // Import the CSS file
 import logoImage from '../Assets/WelcomeLogo1.png'; // Ensure the file path is correct
 
 const WebScrapingPage = () => {
+  const navigate = useNavigate();
+
+  const handleSearch = () => {
+    navigate('/tablenamepage'); // Navigate to the TablenamePage
+  };
+
   return (
     <div className="webscraping-container">
       {/* Navbar Container with Background */}
@@ -33,8 +40,7 @@ const WebScrapingPage = () => {
       </div>
       <div className="webscraping-content-wrapper">
         {/* Content */}
-        <h1>Web Scraping</h1>
-
+        <h1 style={{ marginTop: '15%' }}>Web Scraping</h1>
         {/* Search Box */}
         <div className="search-box">
           <input
@@ -42,7 +48,9 @@ const WebScrapingPage = () => {
             placeholder="Enter your URL"
             className="search-input"
           />
-          <button className="search-button">Search</button>
+          <button className="search-button" onClick={handleSearch}>
+            Search
+          </button>
         </div>
 
         {/* Instruction */}
