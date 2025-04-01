@@ -3,7 +3,7 @@
     background-size: cover; /* Make the background image cover the entire container */
     height: 100vh; /* Full viewport height */
     width: 100%; /* Full viewport width */
-    display: flex;
+    /* display: flex; */ /* Removed display: flex */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -53,7 +53,7 @@
   align-items: center;
   margin-top: 10px; /* Add spacing below the <h1> */
   width: 70%; /* Full width */
-  margin-bottom: 0; /* Ensure no margin below the search box */
+  margin-bottom: 15px; /* Add spacing below the search box */
 }
 
 /* Search Input Field */
@@ -80,4 +80,21 @@
 
 .search-button:hover {
   background-color: darkblue; /* Darker blue on hover */
+}
+
+/* Webscraping Content Wrapper */
+.webscraping-content-wrapper {
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: calc(100vh - 100px); /* Adjust height to fit the viewport minus navbar height */
+  text-align: center; /* Center text alignment */
+}
+
+.webscraping-content-wrapper h1 {
+  margin-bottom: 20px; /* Add spacing below the <h1> */
+}
+
+.webscraping-content-wrapper p {
+  margin-top: 10px; /* Add spacing above the <p> tag */
 }
